@@ -6,46 +6,156 @@
     <title>Sumaiya Ali | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header Section -->
     <header class="bg-slate-900 text-white py-16 px-6 text-center">
-        <h1 class="text-4xl font-bold">SUMAIYA ALI</h1>
-        <p class="text-xl text-slate-400 mt-2">Full-Stack Web Developer & CSE Graduate</p>
-        <p class="text-sm text-slate-500 mt-1">Mirpur-2, Dhaka, Bangladesh | sumaiyaali6722@gmail.com</p>
+        <h1 class="text-4xl font-bold tracking-tight">SUMAIYA ALI</h1>
+        <p class="text-xl text-blue-400 font-medium mt-2">Web Developer</p>
+        <p class="text-sm text-slate-400 mt-2">Mirpur-2, Dhaka, Bangladesh | 01749382340 | sumaiyaali6722@gmail.com</p>
         <div class="mt-4">
-            <a href="https://github.com/sumaiya6722" class="text-blue-400 underline font-semibold">github.com/sumaiya6722</a>
+            <a href="https://github.com/sumaiya6722" target="_blank" class="text-blue-400 hover:text-blue-300 underline font-semibold">github.com/sumaiya6722</a>
         </div>
     </header>
+
     <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
-        <section class="bg-white p-6 rounded-lg shadow-sm">
-            <h2 class="text-2xl font-bold border-b pb-2 mb-4">Technical Skills</h2>
-            <p><strong>Languages:</strong> JavaScript (ES6+), Python, PHP</p>
-            <p class="mt-2"><strong>Frontend:</strong> React.js, Next.js, Tailwind CSS, HTML5, CSS3</p>
-            <p class="mt-2"><strong>Backend & DB:</strong> Node.js, Express.js, Laravel, REST APIs, MongoDB, MySQL</p>
-            <p class="mt-2"><strong>Tools & Auth:</strong> Git, GitHub, Better-Auth, JWT</p>
+        
+        <!-- Summary Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 mb-4 text-slate-900">Summary</h2>
+            <p class="text-slate-600 leading-relaxed">
+                I am a Computer Science and Engineering graduate from BRAC University with a strong foundation in web development. I completed a web development course at Programming Hero and have hands-on experience building web applications using React.js, Next.js, Node.js, and Tailwind CSS. I write clean code and focus on building websites that look good and work smoothly on mobile, tablet, and desktop screens.
+            </p>
         </section>
-        <section class="bg-white p-6 rounded-lg shadow-sm space-y-4">
-            <h2 class="text-2xl font-bold border-b pb-2">Featured Projects</h2>
-            <div>
-                <h3 class="text-xl font-semibold">News Portal Web Application</h3>
-                <p class="text-sm text-slate-500">Next.js, React, Tailwind CSS, MongoDB, Better-Auth</p>
-                <ul class="list-disc pl-5 text-sm mt-1">
+
+        <!-- Technical Skills Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 mb-4 text-slate-900">Technical Skills</h2>
+            <div class="space-y-2">
+                <p><strong>Languages:</strong> JavaScript (ES6+), Python, PHP</p>
+                <p><strong>Frontend:</strong> React.js, Next.js, Tailwind CSS, HTML5, CSS3, React Router</p>
+                <p><strong>Backend & Database:</strong> Node.js, Express.js, Laravel, REST APIs, MongoDB, MySQL</p>
+                <p><strong>Tools & Auth:</strong> Git, GitHub, Better-Auth, JWT</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 space-y-6">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 text-slate-900">Projects</h2>
+            
+            <div class="border-b border-slate-100 pb-4">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <h3 class="text-xl font-semibold text-slate-900">News Portal Web Application</h3>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded mt-1 md:mt-0">Next.js, React, Tailwind CSS, MongoDB, Better-Auth</span>
+                </div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 mt-2 space-y-1">
                     <li>Built a fully responsive news web application using Next.js and Tailwind CSS.</li>
                     <li>Implemented secure user login using Better-Auth with Google and GitHub options.</li>
+                    <li>Connected the frontend layout with a MongoDB database using REST APIs to load data dynamically.</li>
                 </ul>
             </div>
+
+            <div class="border-b border-slate-100 pb-4">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <h3 class="text-xl font-semibold text-slate-900">Full-Stack Job Seeking Web Application</h3>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded mt-1 md:mt-0">Next.js, Node.js, Express.js, MongoDB, JWT</span>
+                </div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 mt-2 space-y-1">
+                    <li>Developed a full-stack job board with different dashboards for employers and job seekers.</li>
+                    <li>Created full CRUD features so users can create, read, update, and delete job postings easily.</li>
+                    <li>Used JSON Web Tokens (JWT) and backend middleware to keep user routes secure.</li>
+                </ul>
+            </div>
+
+            <div class="border-b border-slate-100 pb-4">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <h3 class="text-xl font-semibold text-slate-900">Full-Stack Travel Booking Web Application</h3>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded mt-1 md:mt-0">Next.js, React, Express.js, MongoDB, Better-Auth, Tailwind CSS</span>
+                </div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 mt-2 space-y-1">
+                    <li>Created a travel booking website with a Node.js and Express.js backend.</li>
+                    <li>Managed complex frontend states so filter tools and booking selections work immediately without lagging.</li>
+                </ul>
+            </div>
+
             <div>
-                <h3 class="text-xl font-semibold">Full-Stack Job Seeking Web Application</h3>
-                <p class="text-sm text-slate-500">Next.js, Node.js, Express.js, MongoDB, JWT</p>
-                <ul class="list-disc pl-5 text-sm mt-1">
-                    <li>Developed a full-stack job board with dashboards for employers and jobseekers.</li>
-                    <li>Created full CRUD features and used JWT to keep user routes secure.</li>
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <h3 class="text-xl font-semibold text-slate-900">E-Book Web Application</h3>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded mt-1 md:mt-0">Next.js, React.js, Tailwind CSS, JavaScript, React Router</span>
+                </div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 mt-2 space-y-1">
+                    <li>Designed a responsive book listing application with smooth routing and clean page transitions.</li>
                 </ul>
             </div>
         </section>
-        <section class="bg-white p-6 rounded-lg shadow-sm">
-            <h2 class="text-2xl font-bold border-b pb-2 mb-4">Education</h2>
-            <p><strong>B.Sc. in Computer Science and Engineering</strong> (2020-2025) - BRAC University | CGPA: 2.92</p>
+
+        <!-- Education Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 space-y-4">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 text-slate-900">Education</h2>
+            
+            <div>
+                <div class="flex justify-between items-start">
+                    <h3 class="text-base font-bold text-slate-900">Bachelor of Science in Computer Science and Engineering (CSE)</h3>
+                    <span class="text-sm font-semibold text-slate-500">2020 – 2025</span>
+                </div>
+                <p class="text-sm text-slate-600">BRAC University | <strong>CGPA: 2.92</strong></p>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-start">
+                    <h3 class="text-base font-bold text-slate-900">Higher Secondary Certificate (HSC)</h3>
+                    <span class="text-sm font-semibold text-slate-500">2019</span>
+                </div>
+                <p class="text-sm text-slate-600">Dhaka City College | <strong>GPA: 4.50 (Science Group)</strong></p>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-start">
+                    <h3 class="text-base font-bold text-slate-900">Secondary School Certificate (SSC)</h3>
+                    <span class="text-sm font-semibold text-slate-500">2017</span>
+                </div>
+                <p class="text-sm text-slate-600">Monipur High School & College | <strong>GPA: 5.00 (Science Group)</strong></p>
+            </div>
         </section>
+
+        <!-- Training & Certifications Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 mb-4 text-slate-900">Training & Certifications</h2>
+            <p class="text-sm font-bold text-slate-900">Complete Web Development Course</p>
+            <p class="text-xs text-blue-600 font-medium">Programming Hero</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Learned industry-standard full-stack development using JavaScript ecosystems. Focused heavily on front-end application architecture, core project logic implementation, robust REST API integrations, and secure backend database systems.</p>
+        </section>
+
+        <!-- References Section -->
+        <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold border-b border-slate-100 pb-2 mb-4 text-slate-900">References</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div>
+                    <p class="font-bold text-slate-900">Mahfuza Sultana</p>
+                    <p class="text-xs text-slate-500">Chief Executive Officer</p>
+                    <p class="text-xs text-slate-500">Zilla Parishad, Pabna</p>
+                    <p class="text-blue-600 mt-1">zppabna@gmail.com</p>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900">MD. Ali Ashraf</p>
+                    <p class="text-xs text-slate-500">Assistant Director</p>
+                    <p class="text-xs text-slate-500">Department of Immigration & Passports</p>
+                    <p class="text-blue-600 mt-1">ashrafpass1@gmail.com</p>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900">K.M. Nazmul</p>
+                    <p class="text-xs text-slate-500">Scientific Officer</p>
+                    <p class="text-xs text-slate-500">Soil Resource Development Institute</p>
+                    <p class="text-blue-600 mt-1">kmnbau@srdi.gov.bd</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="bg-slate-900 text-slate-500 text-center py-6 text-xs border-t border-slate-800">
+        <p>© 2026 Sumaiya Ali. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
